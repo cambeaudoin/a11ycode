@@ -3,5 +3,5 @@ export default {
     description: '100% purely accessible components... finally',
     src: './src',
     files: '**/*.{md,mdx}',
-    menu: ['Getting Started', 'Simple Components', 'Complex Components', 'Structural Components', 'Design']
+    menu: ['Getting Started', 'Simple Components', 'Complex Components', 'Structural Components', 'Design', 'potato']
   }
