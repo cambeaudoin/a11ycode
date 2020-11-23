@@ -1,0 +1,102 @@
+---
+name: Button
+menu: Simple Components
+---
+
+import { Button, InputButton, RoleButton } from "./Button";
+import "../Styles.css";
+
+# Button
+
+## General information
+
+Buttons are used to:
+- Do something on the page
+- Should not change a url or redirect a user
+
+## Basic usage
+
+### HTML Button (Best choice!)
+
+<Button>Close the hatch</Button>
+
+#### Code Snippet:
+
+```
+<button type="button">Close the hatch</button>
+```
+
+#### Notes: 
+- The `type` attribute should always be explicitly stated as browsers may handle the default type differently
+- All accessibility traits and attributes (such as focus and outline) are inherent and is recommended
+
+<hr />
+
+### Input Button
+
+<InputButton>Start the engines</InputButton>
+
+#### Code Snippet:
+
+```
+<input type="button" value="Start the engines">
+```
+
+#### Notes: 
+- If you're using this, why not just use a `<button>`?
+
+<hr />
+
+### Role=button
+
+<RoleButton>Launch Rocket</RoleButton>
+
+#### Code Snippet:
+
+```
+<span role="button" tabindex="0">Lauch Rocket</span>
+```
+
+#### Notes: 
+- Peek at the code and see all the different styles and attributes you need to add to make this look like a button
+
+<hr />
+
+## Special usage
+
+### Icon Buttons
+
+<Button ariaLabel="More Information">i</Button>
+
+#### Code Snippet:
+
+```
+<button type="button" aria-label="More Information">i</button>
+```
+
+#### Notes: 
+- Buttons without visible labels must have an informative label for screen reader users
+- Buttons of icons should have a title attribute with the same information as the aria-label so that users who are unfamiliar with iconography can also understand it's meaning
+
+<hr />
+
+## Expected Keyboard Usage
+
+<table aria-labelledby="expected-keyboard-usage">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Enter</td>
+      <td>Activates the button.</td>
+    </tr>
+    <tr>
+      <td>Space</td>
+      <td>Activates the button.</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,28 @@
+---
+name: Example
+menu: Simple Components
+---
+
+import { Playground, Props } from 'docz'
+import { Example } from './Example'
+
+# Example
+
+## Properties
+
+<Props of={Example} />
+
+## Basic usage
+
+<Playground>
+  <Example>Some message</Example>
+</Playground>
+
+## Using different kinds
+
+<Playground>
+  <Example kind="info">Some message</Example>
+  <Example kind="positive">Some message</Example>
+  <Example kind="negative">Some message</Example>
+  <Example kind="warning">Some message</Example>
+</Playground>
